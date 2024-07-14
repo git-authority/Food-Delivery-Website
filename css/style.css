@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Kalam", cursive;
+}
+
+/* CSS Variables */
+
+:root{
+    --background-color: red;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+/* NavBar : Logo and Image */
+
+#logo{
+    margin: 16px 22px;
+}
+
+#logo img{
+    height: 64px;
+    margin: 2px 11px;
+    box-shadow: 6px 6px 8px black;
+    border-radius: 20px;
+}
+
+#navbar{
+    position: relative;
+}
+
+
+/* NavBar : List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{                    /* Applying padding here and not in #navbar ul li{} section because I wan't to add hover effect here, so that on moving the mouse over these, the text has animation */
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 6px 6px 6px black;
+}
+
+
+#navbar ul li a:hover{
+    color: #b7b5b5;
+    text-shadow: 12px 12px 6px black;
+    display: block;
+}
+
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+}
+
+#home::before{
+    content: '';
+    position: absolute;
+    background: url(/images/bg.jpg) no-repeat center center/cover;
+    bottom: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+#home h1{
+    text-align: center;
+    color: black;
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgba(70, 38, 5, 1);
+    position: relative;
+    bottom: 40px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.2rem;
+    padding: 52px;
+}
+
+.h-primary{
+    font-size: 2.2rem;
+    padding: 52px;
+    position: relative;
+    bottom: 60px;
+}
+
+.btn{
+    padding: 9px 28px;
+    background-color: #381409;
+    border: 2px solid white;
+    color: white;
+    margin: 30px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.h-primary_center{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.h-secondary_center{
+    text-align: center;
+}
+
+
+.center{
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 350px;
+}
+
+.services-container{
+    height: 736px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Services Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 7px 10px;
+    border-radius: 38px;
+}
+#services .box img{
+    height: 280px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 28px;
+}
+
+#our_services{
+    font-size: 2.8rem;
+}
+
+
+
+/* Clients Section */
+
+#client-section{
+    height: 494px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("/images/bg1.jpg") no-repeat center center/cover;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#Our_Clients{
+    font-size: 2.8rem;
+    padding-top: 75px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients .client-item:nth-child(1) img {
+    height: 83px;
+}
+
+#clients .client-item:nth-child(2) img {
+    height: 77px;
+}
+
+#clients .client-item:nth-child(3) img {
+    height: 95px;
+}
+
+#clients .client-item:nth-child(4) img {
+    height: 85px;
+}
+
+#clients .client-item:nth-child(5) img {
+    height: 144px;
+    position: relative;
+    bottom  : 13px;
+    right: 23px;
+}
+
+
+/* Contact Section */
+
+#contact_us{
+    position: relative;
+    height: 512px;
+    top: 105px;
+}
+
+#contact_us::before{
+    content: "";
+    position: absolute;
+    background: url(/images/contact.jpg) no-repeat center center/cover;
+    height: 774px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact_us .h-primary_center{
+    font-size: 2.8rem;
+    padding: 70px;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#contact-box .form-group{
+    padding: 6px;
+}
+
+#contact-box form{
+    width: 28%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+    font-weight:600;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+}
+
+#contact-box input{
+    height: 20px;
+}
+
+.btn1{
+    padding: 9px 28px;
+    background-color: #381409;
+    border: 2px solid white;
+    color: white;
+    margin: 30px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+.btn1:hover, .btn:hover{
+    box-shadow: 2px 2px 7px black;
+}
