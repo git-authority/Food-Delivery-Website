@@ -83,7 +83,7 @@ body{
     padding: 3px 200px;
     align-items: center;
     justify-content: center;
-    height: 680px;
+    height: 627px;
 }
 
 #home::before{
@@ -139,6 +139,16 @@ body{
 .h-primary_center{
     text-align: center;
     font-size: 1.2rem;
+    position: relative;
+    top: 58px;
+}
+
+
+#desc_services{
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+    top: 15px;
 }
 
 .h-secondary_center{
@@ -151,11 +161,11 @@ body{
     background-color: black;
     color: white;
     position: relative;
-    top: 350px;
+    bottom: 0px;
 }
 
 .services-container{
-    height: 736px;
+    height: 803px;
 }
 
 
@@ -171,6 +181,9 @@ body{
 #services{
     margin: 34px;
     display: flex;
+    height: 613px;
+    position: relative;
+    top: 44px;
 }
 #services .box{
     border: 2px solid black;
@@ -198,7 +211,7 @@ body{
 /* Clients Section */
 
 #client-section{
-    height: 494px;
+    height: 586px;
 }
 
 #client-section::before{
@@ -255,18 +268,18 @@ body{
 
 #contact_us{
     position: relative;
-    height: 512px;
-    top: 105px;
+    height: 751px;
 }
 
 #contact_us::before{
     content: "";
     position: absolute;
     background: url(/images/contact.jpg) no-repeat center center/cover;
-    height: 774px;
+    height: 750px;
     width: 100%;
     z-index: -1;
     opacity: 0.7;
+    top: 12px;
 }
 
 #contact_us .h-primary_center{
